@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------------------------
+    hero area
+---------------------------------------------------------------------------------------*/
+
+.hero {
+    .hero-text {
+        span {
+            @include textElements($secondaryColor, $thin, 20px, uppercase);
+            letter-spacing: 1.8px;
+            margin-bottom: 35px;
+        }
+        h1 {
+            @include textElements($themeColor, $bold, 50px, normal);
+            margin-bottom: 26px;
+        }
+        a {
+            @include themeBtn($themeColor, $secondaryColor)
+        }
+    }
+    .hero-illustration {
+        img {
+            width: 100%;
+            margin-left: 47px;
+        }
+    }
+}

@@ -1,3 +1,20 @@
+/*----------------------------------------------------------------------------------
+Project     :  WP Pool
+-------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+[Table of contents]
+default css
+navbar area
+hero area
+service area
+showcase area
+about area
+mission area
+team area
+blog area
+cta area
+footer area
+--------------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -23,23 +40,6 @@ p {
   margin: 0;
 }
 
-/*----------------------------------------------------------------------------------
-Project     :  WP Pool
--------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------
-[Table of contents]
-default css
-navbar area
-hero area
-service area
-showcase area
-about area
-mission area
-team area
-blog area
-cta area
-footer area
---------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------
     navbar area
 ---------------------------------------------------------------------------------------*/
@@ -60,14 +60,17 @@ footer area
 
 .header .navigation .meta-info span {
   color: #707070;
-  text-transform: capitalize;
   font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
   margin-right: 7px;
 }
 
 .header .navigation .meta-info p {
   color: #2B8FE5;
   font-weight: 400;
+  font-size: 16px;
+  text-transform: lowercase;
 }
 
 .header .navigation .meta-info .meta-info--phone,
@@ -79,6 +82,17 @@ footer area
 
 .header .navigation .meta-info .meta-info--phone {
   margin-right: 35px;
+}
+
+.header .navigation .meta-info .meta-info--social ul {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header .navigation .meta-info .meta-info--social ul li {
+  margin-right: 10px;
 }
 
 .header .main-menu ul {
@@ -98,8 +112,9 @@ footer area
 }
 
 .header .main-menu ul li a {
-  font-weight: 800;
   color: #092772;
+  font-weight: 800;
+  font-size: 16px;
   text-transform: uppercase;
   display: block;
   transition: 0.5s linear all;
@@ -124,4 +139,41 @@ footer area
 
 .header .main-menu ul li:hover a {
   color: #2B8FE5;
+}
+
+/*-------------------------------------------------------------------------------------
+    hero area
+---------------------------------------------------------------------------------------*/
+.hero .hero-text span {
+  color: #2B8FE5;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 35px;
+}
+
+.hero .hero-text h1 {
+  color: #092772;
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: normal;
+  margin-bottom: 26px;
+}
+
+.hero .hero-text a {
+  display: inline-block;
+  border: 3px solid #2B8FE5;
+  color: #092772;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 18px 21px 13px;
+  letter-spacing: 1.1px;
+  -webkit-text-stroke: 1px #707070;
+  background: transparent;
+}
+
+.hero .hero-illustration img {
+  width: 100%;
+  margin-left: 47px;
 }

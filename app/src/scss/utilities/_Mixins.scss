@@ -16,3 +16,24 @@
     width: $width;
     transition: $transition;
 }
+
+// text elements
+@mixin textElements($color, $fontWeight, $fontSize, $textTransform: lowercase) {
+    color: $color;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    text-transform: $textTransform;
+}
+
+// theme button
+@mixin themeBtn($color, $border) {
+    display: inline-block;
+    border: 3px solid $border;
+    color: $color;
+    font-weight: $bold;
+    text-transform: uppercase;
+    padding: 18px 21px 13px;
+    letter-spacing: 1.1px;
+    -webkit-text-stroke: 1px $grayColor;
+    background: transparent;
+}

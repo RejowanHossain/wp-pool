@@ -1,0 +1,72 @@
+/*-------------------------------------------------------------------------------------
+    navbar area
+---------------------------------------------------------------------------------------*/
+
+.header {
+    padding: 35px 0;
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+    .navigation {
+        .meta-info {
+            @include alignElements(flex, center, end);
+            margin-bottom: 8px;
+            span {
+                @include textElements($grayColor, $thin, 16px, capitalize);
+                margin-right: 7px;
+            }
+            p {
+                @include textElements($secondaryColor, $thin, 16px, lowercase);
+            }
+            .meta-info--phone,
+            .meta-info--email {
+                @include alignElements(flex, center, end);
+            }
+            .meta-info--phone {
+                margin-right: 35px;
+            }
+            .meta-info--social {
+                ul {
+                    margin-bottom: 0;
+                    @include alignElements(flex, center, end);
+                    li {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .main-menu {
+        ul {
+            @include alignElements(flex, center, end);
+            margin-bottom: 0;
+            li {
+                margin-right: 35px;
+                position: relative;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    @include textElements($themeColor, $bold, 16px, uppercase);
+                    display: block;
+                    transition: .5s linear all;
+                }
+                &:after {
+                    @include positionElements(absolute, 50%, -20%, '', $secondaryColor, 5px, 5px, .5s linear all);
+                    border-radius: 50%;
+                    opacity: 0;
+                }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                    a {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
