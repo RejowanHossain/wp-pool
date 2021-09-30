@@ -1,0 +1,18 @@
+// align elements
+@mixin alignElements($val1, $val2, $val3) {
+    display: $val1;
+    align-items: $val2;
+    justify-content: $val3;
+}
+
+// positioning elements
+@mixin positionElements($position, $left, $bottom, $content, $bgColor, $height, $width, $transition) {
+    position: $position;
+    left: $left;
+    bottom: $bottom;
+    content: $content;
+    background-color: $bgColor;
+    height: $height;
+    width: $width;
+    transition: $transition;
+}
