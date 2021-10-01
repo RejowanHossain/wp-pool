@@ -1,4 +1,10 @@
 .service {
+    // position: relative;
+    // .service-bg {
+    //     position: absolute;
+    //     left: -10%;
+    //     z-index: -1;
+    // }
     .service-container {
         padding: 20px 0;
         border-bottom: 2px solid #F0C331;
@@ -20,6 +26,7 @@
         border: 4px solid $borderColor;
         text-align: center;
         padding: 50px 58px;
+        background: #fff;
         .service-icon {
             margin-bottom: 35px;
         }
@@ -43,7 +50,9 @@
                 }
                 -webkit-text-stroke: transparent;
                 color: #fff;
+                z-index: 1;
             }
         }
     }
+    background: url('../../assets/img/service-bg.svg') -17% -1% no-repeat;
 }
