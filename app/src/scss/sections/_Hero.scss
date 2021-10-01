@@ -14,7 +14,19 @@
             margin-bottom: 26px;
         }
         a {
-            @include themeBtn($themeColor, $secondaryColor)
+            @include themeBtn($themeColor, $secondaryColor, .5s linear all, relative);
+            z-index: 9999;
+            &::before {
+                @include positionElements(absolute, 0, 0, '', $secondaryColor, 100%, 0%, .5s linear all);
+                z-index: -1;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+                -webkit-text-stroke: transparent;
+                color: #fff;
+            }
         }
     }
     .hero-illustration {
@@ -23,4 +35,7 @@
             margin-left: 47px;
         }
     }
+    background: url('../../assets/img/hero-bg.svg') no-repeat top left;
+    background-size: cover;
+    padding: 68px 0;
 }

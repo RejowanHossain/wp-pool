@@ -26,7 +26,7 @@
 }
 
 // theme button
-@mixin themeBtn($color, $border) {
+@mixin themeBtn($color, $border, $transition, $position) {
     display: inline-block;
     border: 3px solid $border;
     color: $color;
@@ -36,4 +36,6 @@
     letter-spacing: 1.1px;
     -webkit-text-stroke: 1px $grayColor;
     background: transparent;
+    transition: $transition;
+    position: $position;
 }

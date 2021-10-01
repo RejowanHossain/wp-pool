@@ -144,6 +144,12 @@ p {
 /*-------------------------------------------------------------------------------------
     hero area
 ---------------------------------------------------------------------------------------*/
+.hero {
+  background: url("../../assets/img/hero-bg.svg") no-repeat top right;
+  background-size: cover;
+  padding: 68px 0;
+}
+
 .hero .hero-text span {
   color: #2B8FE5;
   font-weight: 400;
@@ -171,9 +177,139 @@ p {
   letter-spacing: 1.1px;
   -webkit-text-stroke: 1px #707070;
   background: transparent;
+  transition: 0.5s linear all;
+  position: relative;
+  z-index: 9999;
+}
+
+.hero .hero-text a::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: #2B8FE5;
+  height: 100%;
+  width: 0%;
+  transition: 0.5s linear all;
+  z-index: -1;
+}
+
+.hero .hero-text a:hover {
+  -webkit-text-stroke: transparent;
+  color: #fff;
+}
+
+.hero .hero-text a:hover::before {
+  width: 100%;
 }
 
 .hero .hero-illustration img {
   width: 100%;
   margin-right: 47px;
+}
+
+.service {
+  padding: 165px 0 0;
+}
+
+.service .service-container {
+  padding: 20px 0;
+  border-bottom: 2px solid #F0C331;
+}
+
+.service .section-title h2 {
+  font-size: 38px;
+  color: #092772;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.service .section-title p {
+  color: #000000;
+  font-weight: 500;
+}
+
+.service .single-service {
+  border: 4px solid #F8F8F8;
+  text-align: center;
+  padding: 50px 58px;
+}
+
+.service .single-service .service-icon {
+  margin-bottom: 35px;
+}
+
+.service .single-service h4 {
+  font-weight: 800;
+  color: #092772;
+  margin-bottom: 25px;
+  line-height: 32px;
+}
+
+.service .single-service a {
+  display: inline-block;
+  border: 3px solid #2B8FE5;
+  color: #092772;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 18px 21px 13px;
+  letter-spacing: 1.1px;
+  -webkit-text-stroke: 1px #707070;
+  background: transparent;
+  transition: 0.5s linear all;
+  position: relative;
+  padding: 12px 19px 12px;
+  -webkit-text-stroke: transparent;
+}
+
+.service .single-service a::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: #2B8FE5;
+  height: 100%;
+  width: 0%;
+  transition: 0.5s linear all;
+  z-index: -1;
+}
+
+.service .single-service a:hover {
+  -webkit-text-stroke: transparent;
+  color: #fff;
+}
+
+.service .single-service a:hover::before {
+  width: 100%;
+}
+
+.showcase {
+  padding: 45px 0;
+}
+
+.showcase .wrapper {
+  background: #F8F8F8;
+  padding: 37px 52px;
+}
+
+.showcase .wrapper .showcase-title h2 {
+  color: #092772;
+  font-weight: 800;
+  margin-bottom: 11px;
+}
+
+.showcase .wrapper .showcase-title p {
+  margin-bottom: 20px;
+}
+
+.showcase .wrapper .showcase-title p:last-child {
+  margin-bottom: 0;
+}
+
+.showcase .wrapper .showcase-img {
+  width: 350px;
+}
+
+.showcase .wrapper .showcase-img img {
+  width: 100%;
 }
