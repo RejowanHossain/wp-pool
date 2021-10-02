@@ -1,10 +1,8 @@
+/*-------------------------------------------------------------------------------------
+    service area
+---------------------------------------------------------------------------------------*/
+
 .service {
-    // position: relative;
-    // .service-bg {
-    //     position: absolute;
-    //     left: -10%;
-    //     z-index: -1;
-    // }
     .service-container {
         padding: 20px 0;
         border-bottom: 2px solid #F0C331;
@@ -12,9 +10,7 @@
     padding: 165px 0 0;
     .section-title {
         h2 {
-            font-size: 38px;
-            color: $themeColor;
-            font-weight: $medium;
+            @include sectionTitle(38px, $themeColor, $medium);
             margin-bottom: 8px;
         }
         p {

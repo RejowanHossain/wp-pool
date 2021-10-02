@@ -28,7 +28,7 @@
 // theme button
 @mixin themeBtn($color, $border, $transition, $position) {
     display: inline-block;
-    border: 3px solid $border;
+    border: 4px solid $border;
     color: $color;
     font-weight: $bold;
     text-transform: uppercase;
@@ -38,4 +38,11 @@
     background: transparent;
     transition: $transition;
     position: $position;
+}
+
+// section title
+@mixin sectionTitle($fontSize, $color, $fontWeight) {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: $fontWeight;
 }

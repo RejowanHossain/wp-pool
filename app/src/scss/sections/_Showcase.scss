@@ -1,12 +1,15 @@
+/*-------------------------------------------------------------------------------------
+    showcase area
+---------------------------------------------------------------------------------------*/
+
 .showcase {
-    padding: 45px 0;
+    padding: 45px 0 55px;
     .wrapper {
         background: $borderColor;
         padding: 37px 52px;
         .showcase-title {
             h2 {
-                color: $themeColor;
-                font-weight: $bold;
+                @include sectionTitle(32px, $themeColor, $bold);
                 margin-bottom: 11px;
             }
             p {
