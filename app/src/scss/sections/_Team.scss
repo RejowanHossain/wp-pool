@@ -1,0 +1,43 @@
+/*-------------------------------------------------------------------------------------
+    team area
+---------------------------------------------------------------------------------------*/
+
+.team {
+    margin-top: -142px;
+    .team-bg {
+        background: $secondaryColor;
+        padding: 44px 51px;
+    }
+    .team-img {
+        img {
+            width: 100%;
+        }
+    }
+    .team-text {
+        h2 {
+            @include sectionTitle(40px, #fff, $bold);
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        a {
+            @include themeBtn(#fff, $themeColor, .5s linear all, relative);
+            -webkit-text-stroke: transparent;
+            &::before {
+                @include positionElements(absolute, 0, 0, '', $themeColor, 100%, 0%, .5s linear all);
+                z-index: -1;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+                -webkit-text-stroke: transparent;
+                color: #fff;
+                z-index: 1;
+            }
+        }
+    }
+}

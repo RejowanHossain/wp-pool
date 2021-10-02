@@ -1,0 +1,81 @@
+/*-------------------------------------------------------------------------------------
+    footer area
+---------------------------------------------------------------------------------------*/
+
+.footer {
+    background: $themeColor;
+    padding: 82px 0 60px;
+    .footer-inner {
+        text-align: center;
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+        .footer-nav {
+            .footer-meta-info {
+                @include alignElements(flex, center, center);
+                margin-bottom: 15px;
+                span {
+                    @include textElements(#fff, $thin, 16px, capitalize);
+                    margin-right: 7px;
+                }
+                p {
+                    @include textElements(#fff, $thin, 16px, lowercase);
+                }
+                .meta-info--phone,
+                .meta-info--email {
+                    @include alignElements(flex, center, end);
+                }
+                .meta-info--phone {
+                    margin-right: 35px;
+                }
+                .meta-info--social {
+                    ul {
+                        margin-bottom: 0;
+                        @include alignElements(flex, center, end);
+                        li {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .main-menu {
+                margin-bottom: 45px;
+                ul {
+                    @include alignElements(flex, center, center);
+                    margin-bottom: 0;
+                    li {
+                        margin-right: 50px;
+                        position: relative;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a {
+                            @include textElements(#fff, $bold, 16px, uppercase);
+                            display: block;
+                            transition: .5s linear all;
+                        }
+                        &:after {
+                            @include positionElements(absolute, 50%, -20%, '', $secondaryColor, 5px, 5px, .5s linear all);
+                            border-radius: 50%;
+                            opacity: 0;
+                        }
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                            a {
+                                color: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            p {
+                color: $grayColor;
+                font-size: 14px;
+            }
+        }
+    }
+}
