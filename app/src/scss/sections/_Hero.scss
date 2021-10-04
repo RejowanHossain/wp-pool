@@ -8,10 +8,16 @@
             @include textElements($secondaryColor, $thin, 20px, uppercase);
             letter-spacing: 1.8px;
             margin-bottom: 35px;
+            @media (min-width: 770px) and (max-width: 1200px) {
+                font-size: 17px;
+            }
         }
         h1 {
             @include textElements($themeColor, $bold, 50px, normal);
             margin-bottom: 26px;
+            @media (min-width: 770px) and (max-width: 1200px) {
+                font-size: 40px;
+            }
         }
         a {
             @include themeBtn($themeColor, $secondaryColor, .5s linear all, relative);
@@ -27,12 +33,19 @@
                 -webkit-text-stroke: transparent;
                 color: #fff;
             }
+            @media (max-width: 770px) {
+                font-size: 14px;
+                padding: 15px 19px 12px;
+            }
         }
     }
     .hero-illustration {
         img {
             width: 100%;
             margin-left: 47px;
+            @media (max-width: 991px) {
+                margin-left: 0;
+            }
         }
     }
     background: url('../../assets/img/hero-bg.svg') no-repeat top left;

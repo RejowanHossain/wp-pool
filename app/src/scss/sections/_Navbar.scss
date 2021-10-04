@@ -36,6 +36,9 @@
                     }
                 }
             }
+            @media (max-width: 1000px) {
+                display: none;
+            }
         }
     }
     .main-menu {
@@ -68,5 +71,69 @@
                 }
             }
         }
+        @media (max-width: 900px) {
+            display: none;
+        }
     }
+    .mobile-nav {
+        background: $secondaryColor;
+        width: 100%;
+        padding: 20px;
+        margin-top: 27px;
+        transition: .3s linear all;
+        .mobile-menu {
+            ul {
+                @include alignElements(flex, start, end);
+                margin-bottom: 0;
+                flex-direction: column;
+                li {
+                    position: relative;
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        @include textElements(#fff, $bold, 16px, uppercase);
+                        display: block;
+                        transition: .5s linear all;
+                    }
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+                        }
+                        a {
+                            color: $themeColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hamburger-menu {
+        position: absolute;
+        right: 7%;
+        top: 43px;
+        display: none;
+        cursor: pointer;
+        span {
+            height: 3px;
+            width: 32px;
+            display: block;
+            background: $themeColor;
+            &:nth-child(2) {
+                transform: translateY(5px);
+            }
+            &:nth-child(3) {
+                transform: translateY(11px);
+            }
+        }
+        @media (max-width: 900px) {
+            display: block;
+        }
+    }
+}
+
+// toggle class for responsive nav show/hide
+.responsive-menu {
+    display: none;
 }

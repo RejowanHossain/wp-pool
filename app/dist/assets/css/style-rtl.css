@@ -95,6 +95,12 @@ p {
   margin-left: 10px;
 }
 
+@media (max-width: 1000px) {
+  .header .navigation .meta-info {
+    display: none;
+  }
+}
+
 .header .main-menu ul {
   display: flex;
   align-items: center;
@@ -141,6 +147,87 @@ p {
   color: #2B8FE5;
 }
 
+@media (max-width: 900px) {
+  .header .main-menu {
+    display: none;
+  }
+}
+
+.header .mobile-nav {
+  background: #2B8FE5;
+  width: 100%;
+  padding: 20px;
+  margin-top: 27px;
+  transition: 0.3s linear all;
+}
+
+.header .mobile-nav .mobile-menu ul {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  margin-bottom: 0;
+  flex-direction: column;
+}
+
+.header .mobile-nav .mobile-menu ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header .mobile-nav .mobile-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.header .mobile-nav .mobile-menu ul li a {
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.5s linear all;
+}
+
+.header .mobile-nav .mobile-menu ul li:hover::after {
+  opacity: 1;
+}
+
+.header .mobile-nav .mobile-menu ul li:hover a {
+  color: #092772;
+}
+
+.header .hamburger-menu {
+  position: absolute;
+  left: 7%;
+  top: 43px;
+  display: none;
+  cursor: pointer;
+}
+
+.header .hamburger-menu span {
+  height: 3px;
+  width: 32px;
+  display: block;
+  background: #092772;
+}
+
+.header .hamburger-menu span:nth-child(2) {
+  transform: translateY(5px);
+}
+
+.header .hamburger-menu span:nth-child(3) {
+  transform: translateY(11px);
+}
+
+@media (max-width: 900px) {
+  .header .hamburger-menu {
+    display: block;
+  }
+}
+
+.responsive-menu {
+  display: none;
+}
+
 /*-------------------------------------------------------------------------------------
     hero area
 ---------------------------------------------------------------------------------------*/
@@ -159,12 +246,24 @@ p {
   margin-bottom: 35px;
 }
 
+@media (min-width: 770px) and (max-width: 1200px) {
+  .hero .hero-text span {
+    font-size: 17px;
+  }
+}
+
 .hero .hero-text h1 {
   color: #092772;
   font-weight: 800;
   font-size: 50px;
   text-transform: normal;
   margin-bottom: 26px;
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+  .hero .hero-text h1 {
+    font-size: 40px;
+  }
 }
 
 .hero .hero-text a {
@@ -203,9 +302,22 @@ p {
   width: 100%;
 }
 
+@media (max-width: 770px) {
+  .hero .hero-text a {
+    font-size: 14px;
+    padding: 15px 19px 12px;
+  }
+}
+
 .hero .hero-illustration img {
   width: 100%;
   margin-right: 47px;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-illustration img {
+    margin-right: 0;
+  }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -308,6 +420,12 @@ p {
   margin-bottom: 11px;
 }
 
+@media (max-width: 990px) {
+  .showcase .wrapper .showcase-title h2 {
+    font-size: 25px;
+  }
+}
+
 .showcase .wrapper .showcase-title p {
   margin-bottom: 20px;
 }
@@ -389,6 +507,13 @@ p {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  .about .about-bg .about-text {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
 .about .about-bg .about-img img {
   width: 100%;
 }
@@ -412,6 +537,12 @@ p {
 .about .about-bg .section-title p {
   color: #fff;
   padding-left: 59px;
+}
+
+@media (max-width: 991px) {
+  .about .about-bg .section-title p {
+    padding-left: 0;
+  }
 }
 
 .about .about-bg .single-mission {
@@ -502,6 +633,12 @@ p {
   font-weight: 800;
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+  .team .team-text h2 {
+    font-size: 35px;
+  }
 }
 
 .team .team-text p {

@@ -18,6 +18,9 @@
             @include sectionTitle(40px, #fff, $bold);
             margin-bottom: 10px;
             text-transform: capitalize;
+            @media (max-width: 900px) {
+                font-size: 35px;
+            }
         }
         p {
             color: #fff;
