@@ -42,5 +42,9 @@
                 z-index: 1;
             }
         }
+        @media (max-width: 730px) {
+            margin-top: 20px;
+            text-align: center;
+        }
     }
 }

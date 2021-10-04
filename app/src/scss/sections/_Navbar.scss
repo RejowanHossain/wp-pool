@@ -7,6 +7,9 @@
     .logo {
         img {
             width: 100%;
+            @media (min-width: 320px) and (max-width: 575px) {
+                width: inherit;
+            }
         }
     }
     .navigation {
@@ -129,6 +132,9 @@
         }
         @media (max-width: 900px) {
             display: block;
+        }
+        @media (min-width: 320px) and (max-width: 575px) {
+            top: 57px;
         }
     }
 }

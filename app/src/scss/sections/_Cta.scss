@@ -21,6 +21,9 @@
         p {
             color: $paragraphColor;
             padding-right: 59px;
+            @media (max-width: 730px) {
+                padding-right: 0;
+            }
         }
         a {
             @include themeBtn($themeColor, $secondaryColor, .5s linear all, relative);

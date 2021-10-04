@@ -4,6 +4,9 @@
 
 .showcase {
     padding: 45px 0 55px;
+    @media (max-width: 730px) {
+        padding: 22px 0 55px;
+    }
     .wrapper {
         background: $borderColor;
         padding: 37px 52px;
@@ -22,10 +25,20 @@
                 }
             }
         }
-        .showcase-img {
-            width: 350px;
-            img {
-                width: 100%;
+        .end-content {
+            display: flex;
+            justify-content: end;
+            .showcase-img {
+                width: 350px;
+                img {
+                    width: 100%;
+                }
+                @media (max-width: 730px) {
+                    margin-top: 20px;
+                }
+            }
+            @media (max-width: 730px) {
+                justify-content: center;
             }
         }
     }

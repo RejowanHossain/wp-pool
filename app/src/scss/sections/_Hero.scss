@@ -8,15 +8,21 @@
             @include textElements($secondaryColor, $thin, 20px, uppercase);
             letter-spacing: 1.8px;
             margin-bottom: 35px;
-            @media (min-width: 770px) and (max-width: 1200px) {
+            @media (min-width: 450px) and (max-width: 1200px) {
                 font-size: 17px;
+            }
+            @media (min-width: 320px) and (max-width: 459px) {
+                font-size: 15px;
             }
         }
         h1 {
             @include textElements($themeColor, $bold, 50px, normal);
             margin-bottom: 26px;
-            @media (min-width: 770px) and (max-width: 1200px) {
+            @media (min-width: 450px) and (max-width: 1200px) {
                 font-size: 40px;
+            }
+            @media (min-width: 320px) and (max-width: 459px) {
+                font-size: 35px;
             }
         }
         a {
