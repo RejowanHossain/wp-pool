@@ -79,11 +79,13 @@
         }
     }
     .mobile-nav {
+        display: none;
         background: $secondaryColor;
         width: 100%;
         padding: 20px;
         margin-top: 27px;
         transition: .3s linear all;
+        position: relative;
         .mobile-menu {
             ul {
                 @include alignElements(flex, start, end);
@@ -110,6 +112,15 @@
                     }
                 }
             }
+        }
+        .close-nav {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 26px;
+            position: absolute;
+            right: 28px;
+            top: 0;
         }
     }
     .hamburger-menu {
@@ -141,5 +152,5 @@
 
 // toggle class for responsive nav show/hide
 .responsive-menu {
-    display: none;
+    display: block;
 }
